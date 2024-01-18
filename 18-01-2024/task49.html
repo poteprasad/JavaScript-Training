@@ -7,14 +7,11 @@
 </head>
 <body>
     <script>
-       //What do you think, will it work? What will be shown?
-        'use.strict';
-         let str = "Hello";
-         str.test = 5;
-         alert(str.test); //error
-
-              
+        let styles = ["Jazz", "Blues"];
+        styles.push("Rock-n-Roll");
+        styles[Math.floor((styles.length - 1) / 2)] = "Classics";
+        alert( styles.shift() );
+        styles.unshift("Rap", "Reggae");
     </script>
-    
 </body>
 </html>

@@ -6,15 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-       //What do you think, will it work? What will be shown?
-        'use.strict';
-         let str = "Hello";
-         str.test = 5;
-         alert(str.test); //error
-
-              
+    <script>  
+         function ucFirst(str) {
+              if (!str) return str;
+                 return str[0].toUpperCase() + str.slice(1);
+      }
+         alert( ucFirst("john") );
+        
     </script>
-    
 </body>
 </html>
